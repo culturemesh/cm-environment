@@ -76,7 +76,7 @@
 #  }
 #
 define apache::vhost(
-    $docroot,
+    $docroot			 = 'home3/culturp7/public_html',
     $manage_docroot              = true,
     $virtual_docroot             = false,
     $port                        = undef,
@@ -107,7 +107,7 @@ define apache::vhost(
     $servername                  = $name,
     $serveraliases               = [],
     $options                     = ['Indexes','FollowSymLinks','MultiViews'],
-    $override                    = ['None'],
+    $override                    = ['All'],
     $directoryindex              = '',
     $vhost_name                  = '*',
     $logroot                     = $::apache::logroot,
