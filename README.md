@@ -201,6 +201,6 @@ Then restart the server with
 	sudo service httpd restart
 
 And continue breathing. That remains important. But don't get cocky
-about it. It's unprofessional. But, nobody will complain if, in a moment
-of weakness, you go ahead and breathe yourself an nice big gulp of
+about it. It's unprofessional. But...nobody will complain if - in a moment
+of weakness - you go ahead and breathe yourself a nice big gulp of
 victory oxygen.
