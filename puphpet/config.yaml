@@ -174,9 +174,9 @@ php:
             - hash
     ini:
         display_errors: On
-        error_reporting: '-1'
+        error_reporting: 'E_ALL'
         session.save_path: /var/lib/php/session
-    timezone: America/Chicago
+    timezone: America/Denver
     mod_php: '1'
 hhvm:
     install: '0'

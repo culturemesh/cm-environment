@@ -72,5 +72,4 @@ define php::augeas (
     lens    => 'Php.lns',
     changes => $changes,
   }
-
 }
