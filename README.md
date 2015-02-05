@@ -81,7 +81,7 @@ And then run:
 
 Should give you this as output:
 
-![Working out image bugs] (images/netstat-output.png)
+![Working out image bugs] (images/netstat-output.jpg)
 
 If you see a connection for httpd on port 80, congratulations! That's our apache server.
 
