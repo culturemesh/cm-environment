@@ -172,10 +172,12 @@ php:
             - bz2
             - enchant
             - hash
+            - apc
     ini:
         display_errors: On
         error_reporting: 'E_ALL'
         session.save_path: /var/lib/php/session
+        apc.enabled: '1'
     timezone: America/Denver
     mod_php: '1'
 hhvm:
