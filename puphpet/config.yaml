@@ -46,6 +46,48 @@ vagrantfile-local:
                     exclude:
                         - .vagrant/
                     auto: 'false'
+            yopyopyopyop:
+                owner: www-data
+                group: www-data
+                source: ./scripts
+                target: /home/vagrant/scripts
+                sync_type: default
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                    auto: 'false'
+            environment-files:
+                owner: www-data
+                group: www-data
+                source: ./environment
+                target: /home3/culturp7
+                sync_type: default
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                    auto: 'false'
+            bash-scripts:
+                owner: vagrant
+                group: vagrant
+                source: ./bin
+                target: /home/vagrant/bin
+                sync_type: default
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                    auto: 'false'
         usable_port_range:
             start: 10200
             stop: 10500

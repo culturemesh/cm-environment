@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -e "tests/phpunit.xml" ]; then
+    php /home3/culturp7/public_html/culturemesh-live/htdocs/vendor/phpunit/phpunit/phpunit.php --configuration tests/phpunit.xml --testsuite $1
+else
+    echo ""
+    echo "Configuration file not found. Run from culturemesh-live/htdocs."
+    echo ""
+fi

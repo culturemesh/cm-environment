@@ -137,6 +137,24 @@ The code should be as follows:
 
 7. Contact me for the configuration file (and further instructions, WOOOOOOOO)
 
+8. Setup your bash
+
+From SSH, navigate to the home folder:
+
+	cd ~
+
+And open up the .bashrc file
+	
+	vim .bashrc
+
+And copy in this little passage:
+
+	if [ -d "$HOME/bin" ] ; then
+	  PATH="$HOME/bin:$PATH"
+	fi
+
+And, of course, save.
+
 ## THINGS YOU MAY NEED TO CHECK
 
 1. If your browser isn't showing the culturemesh home page when you
@@ -204,3 +222,7 @@ And continue breathing. That remains important. But don't get cocky
 about it. It's unprofessional. But...nobody will complain if - in a moment
 of weakness - you go ahead and breathe yourself a nice big gulp of
 victory oxygen.
+
+3. You'll also need to know where the php.ini file is located.
+
+It should be at /etc/php.d/zzzz_custom.ini
