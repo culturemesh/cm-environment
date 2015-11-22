@@ -33,14 +33,19 @@ Oh, and welcome to the team.
 Here's all the software you'll need:
 
 - Install Git (http://git-scm.com/)
-- Install Vagrant (https://www.vagrantup.com/)
-- Install VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+- Install Vagrant 1.7.4 (https://www.vagrantup.com/)
+- Install VirtualBox 4.3.x (https://www.virtualbox.org/wiki/Downloads)
 - Install Ruby (https://www.ruby-lang.org/en/downloads/)
 	+ I'm on version 2.0.0p598 (haven't had any trouble with different versions, but haven't tried)
+	+ Version 2.1.7 also works
 - Install PHP 5.4 if you want to be able to debug (Hint: Yes you do!)
 
 -- may have to play around with different version configurations for the vagrant and virtualbox installs
 -- for me, Windows 8.1 ( Vagrant 1.6.5, VirtualBox 4.3.20 r96967, I believe a higher version of vagrant would have had problems )
+
+This plugin must be installed so that your system's etc/hosts file will include your server.
+
+	vagrant plugin install vagrant-hostmanager
 
 ## THE ENVIRONMENT
 
